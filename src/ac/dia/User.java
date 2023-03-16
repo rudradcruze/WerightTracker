@@ -8,22 +8,17 @@ public class User {
 	private String userName;
 	private String email;
 	private String phoneNumber;
-	private float weight;
-	private float height;
-	private Date date;
 	private String address;
-	
-	public User(int id, String userName, String email, String phoneNumber, float weight, float height, Date date,
-			String address) {
+	private Date date;
+
+	public User(int id, String userName, String email, String phoneNumber, String address, Date date) {
 		super();
 		this.id = id;
 		this.userName = userName;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
-		this.weight = weight;
-		this.height = height;
-		this.date = date;
 		this.address = address;
+		this.date = date;
 	}
 
 	public int getId() {
@@ -66,22 +61,6 @@ public class User {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public float getWeight() {
-		return weight;
-	}
-
-	public void setWeight(float weight) {
-		this.weight = weight;
-	}
-
-	public float getHeight() {
-		return height;
-	}
-
-	public void setHeight(float height) {
-		this.height = height;
-	}
-
 	public String getAddress() {
 		return address;
 	}
@@ -93,16 +72,13 @@ public class User {
 	public void login() {}
 	public void logOut() {};
 	
-		
 	public void show() {
-		System.out.println(" id                   :  " + getId());
-		System.out.println(" Tainer Eame   :  " + getUserName());
-		System.out.println(" Email             :  " + getEmail());
-		System.out.println(" Date              :  " + getDate());
-		System.out.println(" Height           :  " + getHeight());
-		System.out.println(" Weight          :  " + getWeight());
-		System.out.println(" Phone           :  " + getPhoneNumber());
-		System.out.println(" Address        :  " + getAddress());
+		System.out.println(" id:  " + getId());
+		System.out.println(" Name:  " + getUserName());
+		System.out.println(" Email:  " + getEmail());
+		System.out.println(" Phone:  " + getPhoneNumber());
+		System.out.println(" Address:  " + getAddress());
+		System.out.println(" Date:  " + getDate());
 	}
 	
 }
